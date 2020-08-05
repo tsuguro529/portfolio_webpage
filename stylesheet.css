@@ -18,7 +18,7 @@ a {
 }
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
+  padding: 150px 0 150px 0;
   background-image: url(top.png);
   background-size: cover;
   color: white;
@@ -26,71 +26,26 @@ a {
 }
 
 .top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
+  font-size: 100px;
   letter-spacing: 5px;
 }
 
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 40px;
+.top-wrapper h2 {
+  font-size: 50px;
 }
 
-.btn-wrapper {
-  text-align: center;
-}
-
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
+.top-wrapper span {
+  color: #8b0000;
 }
 
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(34,49,52,0.9);
+  background-color: #8b0000;
   position :fixed;
   top: 0;
   z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
+  opacity: 0.9;
 }
 
 .header-right {
@@ -105,13 +60,61 @@ header {
   display: block;
   float: left;
   transition: all 0.5s;
+  font-weight: bold;
 }
 
 .header-right a:hover {
   background-color: rgba(255,255,255,0.3);
 }
 
-.lesson-wrapper {
+.header-left a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.header-left a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.about-wrapper{
+  height: 580px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f8;
+  text-align: center;
+}
+
+.about-heading{
+  padding-top: 65px;
+  padding-bottom: 0px;
+  color: #5f5d60;
+}
+
+.about-heading h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.about-heading :after{
+  display: block;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg,rgba(168,8,8,.7) 0,rgba(245,136,32,.7));
+}
+
+.profile h3{
+  font-weight: bold;
+  color: #5f5d60;
+}
+
+.skill-wrapper {
   height: 580px;
   padding-bottom: 80px;
   padding-left: 5%;
@@ -120,76 +123,128 @@ header {
   text-align: center;
 }
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
+.skill-heading {
+  padding-top: 65px;
+  padding-bottom: 0px;
   color: #5f5d60;
 }
 
-.heading h2 {
-  font-weight: normal;
+.skill-heading h2 {
+  font-size: 40px;
+  font-weight: bold;
 }
 
-.lesson {
+.skill-heading :after{
+  display: block;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg,rgba(168,8,8,.7) 0,rgba(245,136,32,.7));
+}
+
+.skill {
   float: left;
   width: 25%;
 }
 
-.lesson-icon {
+.skill-icon {
   position: relative;
 }
 
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
+.text-contents{
+  padding:0 5px;
 }
 
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
+.works-wrapper {
+  height: 1000px;
   padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
   text-align: center;
 }
 
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
+.works-heading {
+  padding-top: 65px;
+  padding-bottom: 0px;
+  color: #5f5d60;
 }
 
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+.works-heading h2 {
+  font-size: 40px;
+  font-weight: bold;
 }
 
-footer img {
-  width: 125px;
+.works-heading :after{
+  display: block;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg,rgba(168,8,8,.7) 0,rgba(245,136,32,.7));
 }
 
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+.works{
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+.work-box{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    width: 40%;
+    vertical-align: top;
+    margin: 0 20px 40px 0;
+    border-radius: 20px;
+    background-color: #ffffff;
+    position: relative;
 }
+
+.work-box h2 {
+    font-weight: bold;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-bottom: 0px;
+    color: #800000;
+}
+
+.work-text{
+    word-break: break-all;
+    padding: 0 10px;
+    color: #333333;
+}
+
+.contact-wrapper{
+  height: 350px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contact-heading{
+  padding-top: 65px;
+  padding-bottom: 0px;
+  color: #5f5d60;
+}
+
+.contact-heading h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contact-heading :after{
+  display: block;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg,rgba(168,8,8,.7) 0,rgba(245,136,32,.7));
+}
+
+.mail h3{
+  font-weight: bold;
+  color: #5f5d60;
+}
+
 
 .menu-icon {
   color: white;
@@ -204,68 +259,13 @@ footer {
 }
 
 @media all and (max-width: 1000px) {
-  .lesson {
+  .skill {
     width: 50%;
     margin-bottom: 50px;
   }
 
-  .lesson-wrapper {
+  .skill-wrapper {
     height: 990px;
   }
 
-  footer {
-    text-align: center;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
-}
-
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .top-wrapper .btn {
-    width: 100%;
-  }
-
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
 }
